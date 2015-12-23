@@ -13,6 +13,13 @@
                 <li>Follow <a href="http://www.twitter.com/pulseframework" target="_blank">@pulseframework</a> on Twitter</li>
             </ol>
         </section>
+        <section style="padding-bottom: 20px;">
+            <h2>Auth Security incorporated</h2>
+            <p>
+                Check the integrated security with Authorization Header, 
+                start with this <a href="<?=basePath()?>/secured">"Protected path" Example</a> and get PublicKey in <code>Controller/Default.php</code>. Change <code>errorAuth();</code> with <code>printAuth();</code> and start with your secured Api's.
+            </p>
+        </section>
         <section>
             <h2>PULSE Framework Community</h2>
 
@@ -39,3 +46,4 @@
         <section style="padding-bottom: 10px">
             <p><i>PULSE Framework Version.<?=Pulse\Pulse::VERSION?></i></p>
         </section>
+
