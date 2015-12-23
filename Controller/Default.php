@@ -29,7 +29,7 @@ $API->get('/',
 );
 
 // @Route(GET) Hello World example.
-$API->get('/hello/:var', 
+$API->get('/hello/{var}', 
     function($var) use($API) {
         // Optional: define a menu father
         pathActive('/hello');
@@ -38,6 +38,22 @@ $API->get('/hello/:var',
             'title' => 'Hello World!',
             'example' => $var
         ));
+    }
+);
+
+// @Route(GET) Protected path with Authorization HEADER
+$API->get('/secured', 
+    function() use($API) {
+        if(isAuth()){
+            // Optional: define a menu father
+            pathActive('secured');
+            // replace this example code with whatever you need
+            $API->render('Default:home', array(
+                'title' => 'Welcome to Secured PULSE!'
+            ));
+        } else {
+            echo errorAuth();
+        }
     }
 );
 
@@ -54,14 +70,6 @@ $API->put(
     '/put',
     function () {
         echo 'This is a PUT route';
-    }
-);
-
-// @Route(PATH)
-$API->patch(
-    '/patch', 
-    function () {
-        echo 'This is a PATCH route';
     }
 );
 
