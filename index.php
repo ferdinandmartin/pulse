@@ -36,11 +36,6 @@ require 'Pulse/Pulse.php';
 $API = new \Pulse\Pulse();
 
 /**
- * @var Procedures Module $procedures
- */
-$API->add(new \Pulse\Procedures());
-
-/**
  * @var Global Configuration $loadConfig
  */
 require \Pulse\Procedures::loadConfig();
