@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="<?=asset('bootstrap.min.css')?>">
         <link rel="stylesheet" href="<?=asset('styles.css')?>">
         <title><?=$title?></title>
+        <link rel="icon" type="image/png" href="<?=asset('pulseLogo.png')?>" />
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
