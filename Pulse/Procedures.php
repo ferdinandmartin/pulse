@@ -42,7 +42,7 @@ class Procedures extends \Pulse\Kernel
     /**
      * LOAD Configuration
      */
-    public function loadConfig()
+    public static function loadConfig()
     {
         return 'Pulse/Config/Config.php';
     }
@@ -50,7 +50,7 @@ class Procedures extends \Pulse\Kernel
     /**
      * LOAD WEB of Procedures
      */
-    public function loadRouting()
+    public static unction loadRouting()
     {
         return 'Pulse/Procedures/Routing.php';
     }
