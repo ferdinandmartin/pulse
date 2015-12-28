@@ -4,3 +4,6 @@ body {
 .starter-template {
   padding: 40px 15px;
 }
+.navbar-brand img {
+    margin-top:-3px;
+}
