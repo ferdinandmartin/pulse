@@ -1,3 +1,7 @@
+# Pulse is now Adive Framework
+This version is discontinued, the project is currently supported in this repository:
+https://github.com/ferdinandmartin/adive-php7
+
 # PULSE Framework 1.0.0
 Pulse is a PHP 5 Framework
 PULSE is a PHP Framework based in the concepts of Symfony2, Slim, Codeigniter and Smarty.
